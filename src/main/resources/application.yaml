@@ -1,0 +1,13 @@
+spring:
+  jpa:
+    database: postgresql
+    show-sql: false
+    hibernate:
+      ddl-auto: update
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: ${DB_URL:jdbc:postgresql://localhost:5432/bd-examen}
+    username: ${DB_USERNAME:postgres}
+    password: ${DB_PASSWORD:franco123}
+
+
